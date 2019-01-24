@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PassPlusAdultsPass</name>
+   <tag></tag>
+   <elementGuidId>dcaa6810-b865-4ac4-a66e-5f8bd8cb814c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span/div[1]/div/div/div[1]/button[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span/div[1]/div/div/div[1]/button[2]</value>
+   </webElementProperties>
+</WebElementEntity>
