@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>#msc-header > div > button</value>
+         <value>#app-cruise-search > section > div.cruise-search-container-external > div > div.modal-dropdown > span > div:nth-child(1) > header > button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,13 +17,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='msc-header']/div/button</value>
+      <value>//span/div[1]/header/button</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>css</name>
       <type>Main</type>
-      <value>#msc-header > div > button</value>
+      <value>#app-cruise-search > section > div.cruise-search-container-external > div > div.modal-dropdown > span > div:nth-child(1) > header > button</value>
    </webElementProperties>
 </WebElementEntity>

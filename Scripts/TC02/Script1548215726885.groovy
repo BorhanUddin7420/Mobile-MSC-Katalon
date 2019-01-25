@@ -13,32 +13,36 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+'Open Chrome Browser on Android Mobile'
 WebUI.openBrowser('')
 
+'User navigate to Website MSC UK'
 WebUI.navigateToUrl('https://www.msccruises.co.uk/en-gb/Homepage.aspx')
 
-//WebUI.click(findTestObject('Object Repository/Page_MSC Cruises Holidays to the Ca/img_Children_qs_arrow'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_MSC Cruises Holidays to the Ca/div_'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_MSC Cruises Holidays to the Ca/div_'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_MSC Cruises Holidays to the Ca/img_-_qs_arrow'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_MSC Cruises Holidays to the Ca/th_Clear_next'))
-//
-//WebUI.click(findTestObject('Object Repository/Page_MSC Cruises Holidays to the Ca/span_Feb'))
+'User Click Passenger menu to select number of passengers'
 WebUI.click(findTestObject('Page_MSC Cruises Holidays to the Ca/PassMenu'))
 
-WebUI.waitForElementVisible(findTestObject('Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass'), 5)
-
-WebUI.click(findTestObject('Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass'))
-
+'Wait for page load'
 WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
 
+'Verify that user on Passengers Page'
+WebUI.verifyTextPresent('Passengers', false)
+
+'User click Pluc icon to add one more passengers'
+WebUI.click(findTestObject('Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass'))
+
+'Wait for page load'
+WebUI.delay(3)
+
+'User click Pluc icon to add one more passengers'
+WebUI.click(findTestObject('Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass'))
+
+'Wait for page load'
+WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
+
+'User Click done Button\r\n'
 WebUI.click(findTestObject('Page_MSC Cruises Holidays to the Ca/DonePassenger'))
+
+'Verify 4 adults passengers added successfully'
+WebUI.verifyTextPresent('4 Adults', false)
 

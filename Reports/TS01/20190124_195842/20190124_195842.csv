@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TS01,Chrome 71.0.3578.99,,2019-01-24 19:58:48,2019-01-24 19:59:28,39.660s,PASSED
+,,,,,,
+Test Cases/TC02,Chrome 71.0.3578.99,,2019-01-24 19:58:49,2019-01-24 19:59:27,37.762s,PASSED
+"openBrowser("""")",Chrome 71.0.3578.99,,2019-01-24 19:58:49,2019-01-24 19:59:06,16.988s,PASSED
+"navigateToUrl(""https://www.msccruises.co.uk/en-gb/Homepage.aspx"")",Chrome 71.0.3578.99,,2019-01-24 19:59:06,2019-01-24 19:59:10,4.117s,PASSED
+"click(findTestObject(""Page_MSC Cruises Holidays to the Ca/PassMenu""))",Chrome 71.0.3578.99,,2019-01-24 19:59:10,2019-01-24 19:59:11,0.332s,PASSED
+"delay(5, CONTINUE_ON_FAILURE)",Chrome 71.0.3578.99,,2019-01-24 19:59:11,2019-01-24 19:59:16,5.026s,PASSED
+"verifyTextPresent(""Passengers"", false)",Chrome 71.0.3578.99,,2019-01-24 19:59:16,2019-01-24 19:59:17,1.352s,PASSED
+"click(findTestObject(""Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass""))",Chrome 71.0.3578.99,,2019-01-24 19:59:17,2019-01-24 19:59:17,0.367s,PASSED
+delay(3),Chrome 71.0.3578.99,,2019-01-24 19:59:17,2019-01-24 19:59:20,3.007s,PASSED
+"click(findTestObject(""Page_MSC Cruises Holidays to the Ca/PassPlusAdultsPass""))",Chrome 71.0.3578.99,,2019-01-24 19:59:20,2019-01-24 19:59:21,0.464s,PASSED
+"delay(5, CONTINUE_ON_FAILURE)",Chrome 71.0.3578.99,,2019-01-24 19:59:21,2019-01-24 19:59:26,5.005s,PASSED
+"click(findTestObject(""Page_MSC Cruises Holidays to the Ca/DonePassenger""))",Chrome 71.0.3578.99,,2019-01-24 19:59:26,2019-01-24 19:59:27,0.652s,PASSED
